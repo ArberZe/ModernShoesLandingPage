@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+:root {
+    --main-color: #0776C5;
+    --text-second: #7A7A7A;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.8em;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #EDEDE8;
+}
+
+header {
+    padding: 15.85% 0;
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.header-text {
+    z-index: 1;
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    margin: 12px auto;
+    color: white;
+    line-height: 2em;
+    align-self: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-transform: uppercase;
+}
+.header-text h1 {
+    font-weight: boldest;
+}
+
+#logo {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: fit-content;
+    align-self: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    white-space: nowrap;
+    background-color: var(--main-color);
+    padding: 12px 32px;
+    margin-top: 12px;
+    transition: 
+        transform 250ms ease-in-out,
+        opacity 250ms linear;
+}
+.btn-white {
+    background-color: white;
+    color: var(--main-color);
+}
+.btn:hover, 
+.btn:active {
+    transform: scale(1.05);
+    opacity: .9;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px;
+    max-width: 80%;
+    margin: 32px auto;
+}
+.column {
+    margin:  22px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 350px;
+    align-self: flex-start;
+}
+.column i {
+    margin: 0 0 4px 0;
+}
+.column h3 {
+    
+}
+.column > p {
+    color: var(--text-second);
+}
+
+.column i, .column h3 {
+    color: var(--main-color);
+}
+.img-1 {
+    height: 80vh;
+    width: 80%;
+    background-image: url(/img/vans.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #9e9e9e;
+}
+
+.grid-1 {
+    margin: 64px 0;
+    min-height: 90vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.grid-1-item {
+    padding: 46px 42px;
+    background-color: white;
+}
+.grid-1-item h4 {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.grid-1-item p {
+    color: var(--text-second);
+    width: 60%;
+}
+#grid-img1 {
+    background-image: url(/img/GREATS-Mens-TheRoyale-DarkBrown-02-Web.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    max-height: 100%;
+    background-size: contain;
+        background-position: center;
+        background-color: #f6f6f6;
+}
+#grid-img2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url(/img/shoes2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    max-height: 100%;
+}
+
+.grid-1-item:nth-last-of-type(2) {
+    background-color: var(--main-color);
+}
+#shoes-img-banner {
+    height: 80vh;
+    min-width: 100%;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+}
+#shoes-img-banner h2 {
+    text-align: center;
+}
+#shoes-img-banner .content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#shoes-img-banner .content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+#grid-2 {
+    min-height: 90vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.grid-2-item {
+    padding: 46px 42px;
+    background-color: white;
+}
+.grid-2-item h4 {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.grid-2-item p {
+    color: var(--text-second);
+    width: 60%;
+}
+#grid-2 .img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
+}
+.last-divs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 42px 0;
+}
+@media only screen and (max-width: 600px) {
+    .three-columns {
+        flex-direction: column;
+    }
+    .grid-1 {
+        margin-top: 42px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 450px, 350px, 1fr, 1fr;
+    }
+    #grid-2, #shoes-img-banner .content {
+        grid-template-columns: 1fr;
+    }
+    .img-1 {
+        height: 350px;
+    }
+    #shoes-img-banner .content div {
+        padding-bottom: 56px;
+    }
+    .grid-1-item, .grid-2-item {
+        padding-right: 0;
+    }
+}
