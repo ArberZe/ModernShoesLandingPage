@@ -138,7 +138,7 @@ main {
 }
 
 .grid-1 {
-    margin: 64px 0;
+    margin-top: 64px;
     min-height: 90vh;
     width: 80%;
     display: grid;
